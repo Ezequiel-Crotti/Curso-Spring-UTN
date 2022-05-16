@@ -1,0 +1,10 @@
+package extensibilidad;
+
+
+public class Socio {
+	
+	public void solicitarLibro() {
+		
+	}
+
+}
