@@ -1,11 +1,11 @@
 package test;
 
 import static org.junit.Assert.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.Assert.fail;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
 import extensibilidad.Biblioteca;
 import extensibilidad.SimulacionPublicoEnGeneral;
@@ -18,13 +18,13 @@ class BibliotecaTest {
 	private SimulacionSocio s = new SimulacionSocio();
 	private SimulacionPublicoEnGeneral spg = new SimulacionPublicoEnGeneral();
 	
-	@BeforeEach
+	@Before
 	void setUp() throws Exception {
 		biblioteca1 = new Biblioteca(s);
 		biblioteca2 = new Biblioteca(spg);
 	}
 
-	@AfterEach
+	@After
 	void tearDown() throws Exception {
 		biblioteca1 = null;
 		biblioteca2 = null;
